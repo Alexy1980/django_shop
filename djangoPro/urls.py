@@ -20,7 +20,7 @@ from django.conf.urls import url
 admin.autodiscover()
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     # добавляем urlы
     url(r'^', include('landing.urls')),
     url(r'^', include('orders.urls')),
