@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     # добавляем наш пакет
     'landing',
     'orders',
-    'products'
+    'products',
+    'categories'
 ]
 
 MIDDLEWARE = [

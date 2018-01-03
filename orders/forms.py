@@ -2,10 +2,10 @@
 from django import forms
 from .models import *
 
-class SubscriberForm(forms.ModelForm):
-    class Meta:
-        model = Subscriber
-        # необходимо включить
-        fields = ["email", "name"]
-        # необходимо исключить
-        # exclude = ["email", "name"]
+# class SubscriberForm(forms.ModelForm):
+#     class Meta:
+#         model = Subscriber
+#         # необходимо включить
+#         fields = ["email", "name"]
+#         # необходимо исключить
+#         # exclude = ["email", "name"]

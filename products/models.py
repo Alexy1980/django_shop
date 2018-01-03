@@ -1,7 +1,9 @@
 from django.db import models
+from categories.models import Category
 
 # название модели соответствует названию таблицы в базе данных
 class Product(models.Model):
+    category = models.ForeignKey(Category, blank=True, null=True, default=None, on_delete=models.CASCADE)
     name = models.CharField(max_length=128, blank=True, null=True, default=None)
     price = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     description = models.TextField(blank=True, null=True, default=None)
